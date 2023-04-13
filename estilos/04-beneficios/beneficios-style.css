@@ -1,0 +1,76 @@
+@import url(../00-geral/geral-style.css);
+
+.beneficios{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: var(--cor-cinza-medio);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+.beneficios__bloco{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beneficios__titulo{
+    padding-bottom: 20px;
+}
+
+.beneficios__item{
+    display: flex;
+
+    
+}
+
+.beneficios__item-descricao{
+    width: 350px;
+}
+
+.beneficios__item-descricao > p{
+    width: 300px;
+}
+
+.beneficios__item-icon{
+    position: relative;
+    top: 15px;
+    padding-right: 12px;
+}
+
+.beneficios__item-icon > img{
+    width: 30px;
+}
+
+@media (max-width: 540px){
+    .beneficios{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .beneficios__titulo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .beneficios__bloco{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .beneficios__item-descricao{
+        width: auto;
+    }
+    
+    .beneficios__item-descricao > p{
+        width: auto;
+    }
+}

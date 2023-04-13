@@ -1,0 +1,44 @@
+@import url(../00-geral/geral-style.css);
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio__texto{
+    width: 500px;
+    padding: 40px;
+
+}
+
+.inicio__texto > p {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.inicio__img > img{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+
+@media (max-width:1000px){
+    .inicio{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:550px){
+    .inicio__texto{
+        width: 90%;
+        padding: 0;
+        
+    }
+
+    .inicio__img > img{
+        width: 88vw;
+        padding-top: 25px;
+    }
+}

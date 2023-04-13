@@ -1,0 +1,101 @@
+@import url(../00-geral/geral-style.css);
+
+footer{
+    display: flex;
+    background-color: var(--cor-cinza-medio);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.rodape__item-produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.rodape__item-produtos > a{
+    text-decoration: none;
+    color: var(--cor-cinza-fote);
+    padding-bottom: 4px;
+    font-family: var(--font-texto);
+    font-size: 13px;
+}
+
+.rodape__item-produtos > a:hover{
+    color: var(--cor-destaque);
+}
+
+.rodape__item-produtos > h3{
+    margin-top: 0;
+    font-size: 14.2px;
+}
+
+.rodape__item-atendimento > p{
+    margin-top: 0;
+    width: 200px;
+}
+
+.rodape__item-links > p:nth-child(3){
+    position: relative;
+    bottom: 10px;
+
+}
+
+.rodape__item-links > a:hover{
+    color: var(--cor-destaque);
+}
+
+.rodape__item-links, .rodape__item-atendimento, .rodape__item-produtos{
+    margin-top: 30px;
+}
+
+.rodape{
+    background-color: var(--cor-destaque);
+    height: 25px;
+    text-align: center;
+}
+
+.rodape > p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    color: #fff;
+}
+
+.rodape__item-atendimento > p:nth-of-type(2){
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 0.6em;
+}
+
+.rodape__contatos-valioze > path{
+    fill: var(--cor-cinza-fote);
+    transition: 0.7s;
+}
+
+a:hover > .rodape__contatos-valioze path{
+    fill: var(--cor-destaque);
+}
+
+@media (max-width:601px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .rodape__item-produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            
+    }
+
+
+}
+
+

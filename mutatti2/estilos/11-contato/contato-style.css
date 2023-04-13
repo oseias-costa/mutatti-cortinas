@@ -1,0 +1,49 @@
+@import url(../00-geral/geral-style.css);
+
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato__img > img{
+    width: 300px;
+    display: flex;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.contato__formulario{
+    width: 315px;
+}
+
+.contato__formulario > p {
+    width: 280px;
+    padding-top: 10px;
+}
+
+
+
+.contato__img, .contato__formulario{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.contato__formulario-cx > input{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    margin-bottom: 7px;
+    width: 280px;
+    border: 1px solid #b4aeae;
+    font-family: var(--font-texto);
+}
+
+@media (max-width: 750px){
+    .contato__img, .contato__formulario-cx{
+        padding-bottom: 30px;
+    }
+
+}

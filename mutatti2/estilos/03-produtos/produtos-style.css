@@ -1,0 +1,28 @@
+@import url(../00-geral/geral-style.css);
+
+.produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtos__item{
+    margin: 12px;
+    background-color: var(--cor-cinza-medio);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.produtos__item > img{
+    width: 240px;
+    
+}
+
+@media (max-width:850px){
+    .produtos{
+        flex-wrap: wrap;
+    }
+}

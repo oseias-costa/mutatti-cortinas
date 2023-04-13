@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Inter:wght@400;500&display=swap');
+@font-face {
+    font-family: Titulo;
+    src: url(fontes/Mories.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    border: 0px;
+    
+}
+
+html{
+    margin: 0;
+}
+
+body{
+    padding-top: 130px;
+    margin: 0;
+}
+
+:root{
+    --font-titulo: 'Titulo', sans-serif;
+    --font-texto: 'Inter', sans-serif;
+
+    --cor-cinza-fote: #4A4A4A;
+    --cor-cinza-medio: #D9D9D9;
+    /*--cor-destaque: #CC2F2F;
+    --cor-destaque: rgb(212, 109, 79) ; */
+    --cor-destaque: #BF9E80 ;
+   
+
+}
+
+.botao__fundo-1 {
+    width: 106px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: var(--cor-destaque);
+    color: #fff;
+    font-family: var(--font-texto);
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid var(--cor-destaque);
+    cursor: pointer;
+    transition: all .4s;
+    min-width: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao__fundo-1:hover{
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+    background-color: #fff;
+}
+
+.button{
+    width: 106px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: var(--cor-destaque);
+    color: #fff;
+    font-family: var(--font-texto);
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid var(--cor-destaque);
+    cursor: pointer;
+    transition: all .4s;
+    min-width: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover{
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+    background-color: #fff;
+}
+
+h1{
+    font-family: var(--font-titulo);
+    font-size: 37.2px;
+    color: var(--cor-cinza-fote);
+    display: inline;
+    font-display: swap;
+    letter-spacing: 1.2px;
+}
+
+h2{
+    display: inline;
+    font-family: var(--font-titulo);
+    font-display: swap;
+    color: var(--cor-cinza-fote);
+    font-size: 29.2px;
+}
+
+h3{
+    font-family: var(--font-texto);
+    color: var(--cor-cinza-fote);
+    font-display: swap;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+
+}
+p {
+    font-family: var(--font-texto);
+    font-display: swap;
+    font-size: 13.6px;
+    color: var(--cor-cinza-fote);
+}
+
+.titulo__h1{
+    text-align: center;
+    padding: 25px;
+}
+
+.destaque{
+    color: var(--cor-destaque);
+}
+
+.titulo__centralizado{
+    display: inline;
+    text-align: center;
+
+}
+
+.titulo__centralizado:nth-of-type(1){
+    padding-top: 80px;
+}
+
+#whats {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    z-index: 11;
+}
+
+.titulo__centralizado-bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px){
+    .titulo__centralizado {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+
+    }
+}
+

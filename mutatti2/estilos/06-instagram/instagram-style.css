@@ -1,0 +1,29 @@
+@import url(../00-geral/geral-style.css);
+
+
+.instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram__bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.instagram__bloco > img{
+    width: 180px;
+    height: 180px;
+    margin: 4px;
+}
+
+@media (max-width:600px){
+    .instagram__bloco{
+        flex-wrap: wrap;
+    }
+}
