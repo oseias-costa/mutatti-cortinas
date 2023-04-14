@@ -1,0 +1,55 @@
+.orcamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.orcamento > p {
+    max-width: 540px;
+    padding: 20px;
+}
+
+.orcamento > a > p {
+    font-size: 16px;
+    color: #fff;
+    padding-left: 10px;;
+    padding-right: 10px;;
+    
+}
+
+.orcamento > a  {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #48C857;
+    color: #fff;
+    font-family: #48C857;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 1px solid #48C857;
+    cursor: pointer;
+    transition: all .4s;
+    min-width: 60px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.orcamento > a:hover {
+    background-color: #38a044;
+}
+
+.whatsapp__orcamento {
+    width: 48px;
+    height: 48px;
+}
+
+@media(max-width: 740px){
+    .orcamento > p {
+        text-align: center;
+    }
+}
