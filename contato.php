@@ -18,11 +18,8 @@
     <meta property="twitter:description" content="Mutatti Cortinas - Loja de cortinas, persianas e papeis de parede em Balneário Camboriú e Região.">
     <meta property="twitter:image" content="https://mutatticortinas.com.br/estilos/02-inicio/Persiana-Romana-translucida-2.png">
 
-    <link rel="stylesheet" src="estilos/00-geral/geral-style.css">
-
     <link rel="stylesheet" href="estilos/10-produtos/swiper-style.css"/>
     <link rel="stylesheet" href="estilos/10-produtos/swiper.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta name="google-site-verification" content="XyK51_jB4Kfoc59TzOFyhiDE6ThsOLPiJT4r2pMtfjI" />
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -31,7 +28,7 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-KR2G67M');</script>
 
-    <title>Parede - Mutatti Cortinas</title>
+    <title>Contato - Mutatti Cortinas</title>
 </head>
 <body>
 
@@ -103,78 +100,57 @@
         </div>
         </label>
     </header>
-   <link rel="stylesheet" href="estilos/10-produtos/produtos-style.css">
+   <link href="estilos/10-produtos/produtos-style.css">
     <section class="titulo__h1">
-        <h1 class="destaque">Papel de Parede</h1>
+        <h1 class="destaque">Contato</h1>
     </section>
 
-    <div class="orcamento">
-        <p>O papel de parede é uma opção prática e versátil para quem deseja renovar a decoração de um ambiente de maneira rápida e econômica. Além de sua facilidade de aplicação, o papel de parede oferece diversos benefícios para o espaço, como a criação de um visual elegante e sofisticado, a possibilidade de escolher entre uma ampla variedade de estampas e cores, e a facilidade de manutenção e limpeza.</p>
-        <a href="https://wa.me/554788908699">
-                <img class="whatsapp__orcamento" src="estilos/00-geral/WhatsApp.png">
-                <p>Solicite um Orçamento</p>
-        </a>
-    </div>
-
-    <section class="cortinas">
-    <div class="produtos" data-aos="fade-up" data-aos-duration="1200">
-        <div class="produtos_descricao">
-            <h2>Papel de Parede</h2>
-            <p>Cimento Queimado</p>
+    <link rel="stylesheet" href="estilos/11-contato/contato-style.css">
+    <section class="contato">
+        <div class="contato__img">
+            <img src="estilos/11-contato/Cortina-em-linho_-prega-wave_-sem-forro.webp">
         </div>
-        <div class="produtos_fotos">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="produtos__img" src="estilos/10-produtos/papel-de-parede/Papel-de-parede-cimento-queimado-_1_.webp"></div>
-                  <div class="swiper-slide"><img class="produtos__img" src="estilos/10-produtos/papel-de-parede/Papel-de-parede-cimento-queimado-_2_.webp"></div>
+
+        <?php
+if(!empty($_POST["send"])) {
+	$userName = $_POST["userName"];
+  $userEmail = $_POST["userEmail"];
+	$userPhone = $_POST["userPhone"];
+	$userMessage = $_POST["userMessage"];
+	$toEmail = "oseiasc2@gmail.com";
+  
+	$mailHeaders = "Nome: " . $userName .
+	"\r\n Email: ". $userEmail  . 
+	"\r\n Telefone: ". $userPhone  . 
+	"\r\n Mensagem: " . $userMessage . "\r\n";
+
+	if(mail($toEmail, $userName, $mailHeaders)) {
+	    $message = "Obrigado pelo contato, entraremos em contato em breve.";
+	}
+}
+?>
+
+        <div class="contato__formulario">
+            <div class="contato__formulario-titulo"><h2>Entre em</h2>&nbsp;<h2 class="destaque">Contato</h2></div>
+            <p>Preencha os campos abaixo e entraremos em contato o mais breve possível.</p>
+            <form name="contactFormEmail" method="post" name="form" class="contato__formulario-cx">
+            <input type="text" placeholder="Nome Completo" name="userName" id="userName" required>
+            <input type="email" placeholder="E-mail" name="userEmail" id="userEmail" required>
+            <input type="text" placeholder="Número do Celular" name="userPhone" id="userPhone" required><br> 
+            <input type="text" placeholder="Mensagem" name="userMessage" class="message" id="userMessage" required><br> 
+            <input type="hidden" name="_next" value="https://mutatticortinas.com.br/index.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="submit" name="send" class="botao__fundo-1" value="enviar">
+            </form>
+            <?php if (!empty($message)){ ?>
+                <div class='success'>
+                    <strong><?php echo $message; ?>	</strong>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-              </div>
+                <?php }?>
         </div>
-    </div>
-
-    <div class="produtos" data-aos="fade-up" data-aos-duration="1200">
-        <div class="produtos_descricao">
-            <h2>Papel de Parede Floral</h2>
-            <p>Floral marrom chale no tecido tear</p>
-        </div>
-        <div class="produtos_fotos">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="produtos__img" src="estilos/10-produtos/papel-de-parede/Papel-de-parede-floral-marrom-chale-no-tecido-tear.webp"></div>
-                    <div class="swiper-slide"><img class="produtos__img" src="estilos/10-produtos/papel-de-parede/Papel-de-parede-floral-marrom-chale-tecido-tear.webp"></div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-              </div>
-        </div>
-    </div>
-
-    <div class="produtos" data-aos="fade-up" data-aos-duration="1200">
-        <div class="produtos_descricao">
-            <h2>Papel de Parede</h2>
-            <p>Cimento queimado claro</p>
-        </div>
-        <div class="produtos_fotos">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="produtos__img" src="estilos/10-produtos/papel-de-parede/Papel-de-parede-em-cimento-queimado_-claro.webp"></div>
-                    <div class="swiper-slide"><img class="produtos__img" src="estilos/10-produtos/papel-de-parede/Papel-de-parede-cimento-queimado.webp"></div>
-                   </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-              </div>
-        </div>
-    </div>
-
-
-
+        
     </section>
-</section>
+    
     <link rel="stylesheet" href="estilos/09-rodape/rodape-style.css">
     <footer>
         <div class="rodape__item-links">
@@ -213,6 +189,7 @@
         </div>
         <div class="rodape__item-atendimento">
             <p>Atendimento exclusivo para Balneário Camboriú e Região</p>
+            <p>Desenvolvido por:</p>
             <a href="https://www.valioze.com.br" target="_blank">
                 <svg width="125" height="35" viewBox="0 0 323 99" fill="none" xmlns="http://www.w3.org/2000/svg" class="rodape__contatos-valioze">
                     <path d="M4.31566 22.7176L19.6547 11.9772L63.7268 74.9187L50.7737 98.2518L4.31566 22.7176Z" fill="#8E8E8E"/>
@@ -223,6 +200,7 @@
                     <path d="M135.382 84.413H136.122L138.399 93.8285L141.287 84.413H141.896L144.768 93.8285L147.061 84.413H147.815L145.204 94.8005H144.42L141.591 85.5156L138.762 94.8005H137.979L135.382 84.413ZM160.014 84.413H165.788V85.0368H160.71V89.3166H165.57V89.8969H160.71V94.1622H165.788V94.8005H160.014V84.413ZM181.93 84.413C182.81 84.413 183.482 84.6548 183.946 85.1384C184.41 85.6123 184.643 86.2845 184.643 87.1549C184.643 87.7449 184.468 88.2527 184.12 88.6783C183.782 89.1038 183.39 89.3843 182.945 89.5197C183.554 89.6551 184.062 89.9356 184.468 90.3612C184.884 90.777 185.092 91.3138 185.092 91.9715C185.092 92.871 184.831 93.5674 184.309 94.0606C183.796 94.5539 183.085 94.8005 182.176 94.8005H178.259V84.413H181.93ZM181.77 89.3166C182.147 89.3166 182.5 89.2199 182.829 89.0264C183.158 88.833 183.424 88.5767 183.627 88.2575C183.83 87.9287 183.932 87.5708 183.932 87.1839C183.932 86.4972 183.743 85.9701 183.366 85.6026C182.998 85.2254 182.466 85.0368 181.77 85.0368H178.941V89.3166H181.77ZM182.089 94.1767C182.786 94.1767 183.342 93.9833 183.758 93.5964C184.173 93.1998 184.381 92.6534 184.381 91.957C184.381 91.5701 184.27 91.2219 184.048 90.9125C183.835 90.5933 183.55 90.3466 183.192 90.1726C182.844 89.9888 182.476 89.8969 182.089 89.8969H178.941V94.1767H182.089ZM215.547 94.9746C214.861 94.9746 214.237 94.8537 213.676 94.6119C213.124 94.3701 212.689 94.0316 212.37 93.5964C212.061 93.1515 211.906 92.6437 211.906 92.0731H212.66C212.66 92.518 212.781 92.9145 213.023 93.2627C213.274 93.6012 213.618 93.8672 214.053 94.0606C214.498 94.2541 214.996 94.3508 215.547 94.3508C216.118 94.3508 216.635 94.2589 217.1 94.0751C217.564 93.8817 217.927 93.6157 218.188 93.2772C218.458 92.929 218.594 92.5325 218.594 92.0876C218.594 91.6717 218.463 91.338 218.202 91.0865C217.951 90.8254 217.632 90.6223 217.245 90.4772C216.867 90.3321 216.355 90.1726 215.707 89.9985C214.943 89.7857 214.329 89.5874 213.864 89.4036C213.4 89.2102 213.004 88.9297 212.675 88.5622C212.356 88.185 212.196 87.6966 212.196 87.0969C212.196 86.5649 212.351 86.0814 212.66 85.6461C212.97 85.2109 213.395 84.8675 213.937 84.6161C214.478 84.3646 215.078 84.2389 215.736 84.2389C216.297 84.2389 216.838 84.3453 217.361 84.558C217.883 84.7611 218.318 85.0803 218.666 85.5156C219.015 85.9411 219.203 86.4731 219.232 87.1114H218.507C218.468 86.5988 218.309 86.1732 218.028 85.8347C217.748 85.4962 217.404 85.2496 216.998 85.0948C216.592 84.9401 216.171 84.8627 215.736 84.8627C215.214 84.8627 214.74 84.9643 214.314 85.1674C213.889 85.3608 213.555 85.6268 213.313 85.9653C213.071 86.3038 212.95 86.6762 212.95 87.0824C212.95 87.537 213.086 87.9093 213.357 88.1995C213.627 88.48 213.961 88.7024 214.358 88.8669C214.764 89.0216 215.31 89.1909 215.997 89.3746C216.742 89.5777 217.332 89.7712 217.767 89.9549C218.212 90.129 218.589 90.3853 218.899 90.7238C219.208 91.0624 219.363 91.5121 219.363 92.0731C219.363 92.6437 219.198 93.1515 218.87 93.5964C218.541 94.0316 218.086 94.3701 217.506 94.6119C216.925 94.8537 216.273 94.9746 215.547 94.9746ZM233.813 85.0368H230.636V84.413H237.672V85.0368H234.495V94.8005H233.813V85.0368ZM252.367 94.9746C251.149 94.9746 250.254 94.6796 249.683 94.0897C249.123 93.4997 248.842 92.5954 248.842 91.3767V84.413H249.509V91.3042C249.509 92.3197 249.737 93.0741 250.191 93.5674C250.646 94.0606 251.371 94.3073 252.367 94.3073C253.364 94.3073 254.084 94.0606 254.529 93.5674C254.984 93.0741 255.211 92.3197 255.211 91.3042V84.413H255.893V91.3767C255.893 92.5954 255.607 93.4997 255.037 94.0897C254.476 94.6796 253.586 94.9746 252.367 94.9746ZM272.852 84.413C273.742 84.413 274.482 84.6548 275.072 85.1384C275.662 85.6123 276.097 86.2458 276.377 87.0389C276.658 87.8223 276.798 88.6783 276.798 89.6067C276.798 90.5352 276.658 91.396 276.377 92.1891C276.097 92.9726 275.662 93.6061 275.072 94.0897C274.482 94.5636 273.742 94.8005 272.852 94.8005H269.457V84.413H272.852ZM272.823 94.1477C273.577 94.1477 274.196 93.9349 274.68 93.5093C275.173 93.0741 275.526 92.518 275.739 91.8409C275.961 91.1542 276.073 90.4095 276.073 89.6067C276.073 88.8137 275.961 88.0738 275.739 87.3871C275.526 86.7004 275.173 86.1442 274.68 85.7187C274.196 85.2834 273.577 85.0658 272.823 85.0658H270.153V94.1477H272.823ZM289.856 84.413H290.552V94.8005H289.856V84.413ZM308.525 94.9746C307.422 94.9746 306.503 94.728 305.768 94.2347C305.043 93.7318 304.506 93.0789 304.158 92.2762C303.819 91.4637 303.65 90.5739 303.65 89.6067C303.65 88.6396 303.819 87.7546 304.158 86.9518C304.506 86.1394 305.043 85.4865 305.768 84.9933C306.503 84.4903 307.422 84.2389 308.525 84.2389C309.627 84.2389 310.541 84.4903 311.267 84.9933C311.992 85.4865 312.524 86.1394 312.863 86.9518C313.211 87.7546 313.385 88.6396 313.385 89.6067C313.385 90.5739 313.211 91.4637 312.863 92.2762C312.524 93.0789 311.992 93.7318 311.267 94.2347C310.541 94.728 309.627 94.9746 308.525 94.9746ZM308.525 94.3073C309.492 94.3073 310.285 94.0848 310.904 93.6399C311.533 93.195 311.987 92.6195 312.268 91.9135C312.548 91.2074 312.689 90.4385 312.689 89.6067C312.689 88.775 312.548 88.0061 312.268 87.3C311.987 86.5843 311.533 86.004 310.904 85.5591C310.285 85.1142 309.492 84.8917 308.525 84.8917C307.558 84.8917 306.76 85.1142 306.131 85.5591C305.512 86.004 305.062 86.5843 304.782 87.3C304.501 88.0061 304.361 88.775 304.361 89.6067C304.361 90.4385 304.501 91.2074 304.782 91.9135C305.062 92.6195 305.512 93.195 306.131 93.6399C306.76 94.0848 307.558 94.3073 308.525 94.3073Z" fill="#8E8E8E"/>
                     </svg>
             </a>
+            
         </div>
     </footer>
     <div class="rodape">
@@ -247,10 +225,5 @@
            keyboard: true,
          });
        </script>
-                  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-                  <script>
-                    AOS.init();
-                  </script>
 </body>
 </html>

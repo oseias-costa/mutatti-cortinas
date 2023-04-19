@@ -41,6 +41,10 @@
     font-family: var(--font-texto);
 }
 
+.message {
+    height: 50px;
+}
+
 @media (max-width: 750px){
     .contato__img, .contato__formulario-cx{
         padding-bottom: 30px;
