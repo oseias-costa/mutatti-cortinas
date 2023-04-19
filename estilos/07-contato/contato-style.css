@@ -43,7 +43,7 @@
     height: 50px;
 }
 
-.sucess > strong {
+.sucess {
     font-family: var(--font-texto);
 }
 

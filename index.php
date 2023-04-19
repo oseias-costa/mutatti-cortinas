@@ -246,7 +246,7 @@
                     </form>
                     <?php if (!empty($message)){ ?>
                         <div class='success'>
-                            <strong><?php echo $message; ?>	</strong>
+                            <strong class='success'><?php echo $message; ?>	</strong>
                         </div>
                         <?php }?>
                 </div>

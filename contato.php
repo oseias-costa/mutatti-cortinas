@@ -143,8 +143,8 @@ if(!empty($_POST["send"])) {
             <input type="submit" name="send" class="botao__fundo-1" value="enviar">
             </form>
             <?php if (!empty($message)){ ?>
-                <div class='success'>
-                    <strong><?php echo $message; ?>	</strong>
+                <div>
+                    <strong class='success'><?php echo $message; ?>	</strong>
                 </div>
                 <?php }?>
         </div>
