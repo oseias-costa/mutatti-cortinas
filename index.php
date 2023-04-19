@@ -84,11 +84,11 @@
 
             <input type="checkbox" class="check" id="check" name="check">
             <ul class="menu-items">
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.php">Início</a></li>
                 <li><a href="cortinas.html">Cortinas</a></li>
                 <li><a href="persianas.html">Persianas</a></li>
                 <li><a href="papel-de-parede.html">Papel de Parede</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="contato.php">Contato</a></li>
                 <li><a href="https://wa.me/554788908699" class="botao__fundo-1" target="_blank">Orçamento</a></li>
             </ul>
         </div>
@@ -213,19 +213,43 @@
         <div class="contato__img">
             <img src="estilos/07-contato/287489575_585255449607680_4679238864139419712_n 1.png">
         </div>
-        <div class="contato__formulario">
-            <div class="contato__formulario-titulo"><h2>Entre em</h2>&nbsp;<h2 class="destaque">Contato</h2></div>
-            <p>Preencha os campos abaixo e entraremos em contato o mais breve possível.</p>
-            <form  action="https://formsubmit.co/mutattidecor@gmail.com" method="POST"  name="form" class="contato__formulario-cx">
-                <input type="text" placeholder="Nome Completo" name="nome" required>
-                <input type="email" placeholder="E-mail" name="email" required>
-                <input type="text" placeholder="Número do Celular" name="telefone" required><br> 
-                <input type="text" placeholder="Mensagem" name="mensagem" class="message" required><br> 
-                <input type="hidden" name="_next" value="https://mutatticortinas.com.br/index.html">
-                <input type="hidden" name="_captcha" value="false">
-                <button type="submit" class="botao__fundo-1">enviar</button>
-                </form>
-        </div>
+        <?php
+        if(!empty($_POST["send"])) {
+            $userName = $_POST["userName"];
+          $userEmail = $_POST["userEmail"];
+            $userPhone = $_POST["userPhone"];
+            $userMessage = $_POST["userMessage"];
+            $toEmail = "mutattidecor@gmail.com";
+          
+            $mailHeaders = "Nome: " . $userName .
+            "\r\n Email: ". $userEmail  . 
+            "\r\n Telefone: ". $userPhone  . 
+            "\r\n Mensagem: " . $userMessage . "\r\n";
+        
+            if(mail($toEmail, $userName, $mailHeaders)) {
+                $message = "Obrigado pelo contato, entraremos em contato em breve.";
+            }
+        }
+        ?>
+        
+                <div class="contato__formulario">
+                    <div class="contato__formulario-titulo"><h2>Entre em</h2>&nbsp;<h2 class="destaque">Contato</h2></div>
+                    <p>Preencha os campos abaixo e entraremos em contato o mais breve possível.</p>
+                    <form name="contactFormEmail" method="post" name="form" class="contato__formulario-cx">
+                    <input type="text" placeholder="Nome Completo" name="userName" id="userName" required>
+                    <input type="email" placeholder="E-mail" name="userEmail" id="userEmail" required>
+                    <input type="text" placeholder="Número do Celular" name="userPhone" id="userPhone" required><br> 
+                    <input type="text" placeholder="Mensagem" name="userMessage" class="message" id="userMessage" required><br> 
+                    <input type="hidden" name="_next" value="https://mutatticortinas.com.br/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="submit" name="send" class="botao__fundo-1" value="enviar">
+                    </form>
+                    <?php if (!empty($message)){ ?>
+                        <div class='success'>
+                            <strong><?php echo $message; ?>	</strong>
+                        </div>
+                        <?php }?>
+                </div>
     </section>
 
     <link rel="stylesheet" href="estilos/08-quemsomos/quemsomos-style.css">

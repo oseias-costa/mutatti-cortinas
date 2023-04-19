@@ -45,6 +45,10 @@
     height: 50px;
 }
 
+.sucess > strong {
+    font-family: var(--font-texto);
+}
+
 @media (max-width: 750px){
     .contato__img, .contato__formulario-cx{
         padding-bottom: 30px;

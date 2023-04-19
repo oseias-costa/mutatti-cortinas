@@ -84,11 +84,11 @@
 
             <input type="checkbox" class="check" id="check" name="check">
             <ul class="menu-items">
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.php">Início</a></li>
                 <li><a href="cortinas.html">Cortinas</a></li>
                 <li><a href="persianas.html">Persianas</a></li>
                 <li><a href="papel-de-parede.html">Papel de Parede</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="contato.php">Contato</a></li>
                 <li><a href="https://wa.me/554788908699" class="botao__fundo-1" target="_blank">Orçamento</a></li>
             </ul>
         </div>
