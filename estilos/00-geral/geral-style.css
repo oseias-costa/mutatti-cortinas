@@ -155,6 +155,10 @@ p {
     margin-top: 40px;
 }
 
+.whats {
+    color: transparent;
+}
+
 
 @media (max-width: 600px){
     .titulo__centralizado {
