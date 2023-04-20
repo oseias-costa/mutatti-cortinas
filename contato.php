@@ -133,7 +133,7 @@ if(!empty($_POST["send"])) {
         <div class="contato__formulario">
             <div class="contato__formulario-titulo"><h2>Entre em</h2>&nbsp;<h2 class="destaque">Contato</h2></div>
             <p>Preencha os campos abaixo e entraremos em contato o mais breve possível.</p>
-            <form name="contactFormEmail" method="post" name="form" class="contato__formulario-cx"  id="envia_contato">
+            <form name="contactFormEmail" method="post" name="form" class="contato__formulario-cx" id="envia_contato">
             <input type="text" placeholder="Nome Completo" name="userName" id="userName" required>
             <input type="email" placeholder="E-mail" name="userEmail" id="userEmail" required>
             <input type="text" placeholder="Número do Celular" name="userPhone" id="userPhone" required><br> 

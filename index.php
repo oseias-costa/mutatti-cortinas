@@ -22,7 +22,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <meta name="google-site-verification" content="XyK51_jB4Kfoc59TzOFyhiDE6ThsOLPiJT4r2pMtfjI" />
+    <meta name="google-site-verification" content="jkPW8K8ktbTiQfpiGYPTwYA9bCKFlrzRzR0T6qvsooo" />
     <meta name="facebook-domain-verification" content="e0tc8jgnstalantms5kn7zlxjhisn2" />
+
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -236,7 +238,7 @@
                 <div class="contato__formulario">
                     <div class="contato__formulario-titulo"><h2>Entre em</h2>&nbsp;<h2 class="destaque">Contato</h2></div>
                     <p>Preencha os campos abaixo e entraremos em contato o mais breve possível.</p>
-                    <form name="contactFormEmail" method="post" name="form" class="contato__formulario-cx">
+                    <form name="contactFormEmail" method="post" name="form" class="contato__formulario-cx" id="envia_contato">
                     <input type="text" placeholder="Nome Completo" name="userName" id="userName" required>
                     <input type="email" placeholder="E-mail" name="userEmail" id="userEmail" required>
                     <input type="text" placeholder="Número do Celular" name="userPhone" id="userPhone" required><br> 
