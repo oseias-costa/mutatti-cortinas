@@ -144,7 +144,7 @@ if(!empty($_POST["send"])) {
             </form>
             <?php if (!empty($message)){ ?>
                 <div>
-                    <strong class='success'><?php echo $message; ?>	</strong>
+                    <p class='success'><?php echo $message; ?>	</p>
                 </div>
                 <?php }?>
         </div>
