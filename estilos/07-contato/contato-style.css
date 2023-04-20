@@ -43,8 +43,10 @@
     height: 50px;
 }
 
-.sucess {
+.success {
+    margin-top: 15px;
     font-family: var(--font-texto);
+    font-size: 16pt;
 }
 
 @media (max-width: 750px){
