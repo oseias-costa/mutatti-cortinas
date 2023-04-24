@@ -121,17 +121,17 @@
     <section class="produtos" data-aos="fade-up" data-aos-duration="1200">
         
         <div class="produtos__item">
-            <img src="estilos/03-produtos/cortina.png" alt="Cortina da Muttati Cortinas">
+            <img src="estilos/03-produtos/corti.png" alt="Cortina da Muttati Cortinas">
             <h3>Cortinas</h3>
             <a href="cortinas.html" class="botao__fundo-1">Veja mais</a>
         </div>
         <div class="produtos__item">
-            <img src="estilos/03-produtos/persiana.png" alt="Persiana da Muttati Cortinas">
+            <img src="estilos/03-produtos/persi.png" alt="Persiana da Muttati Cortinas">
             <h3>Persianas</h3>
             <a href="persianas.html" class="botao__fundo-1">Veja mais</a>
         </div>
         <div class="produtos__item">
-            <img src="estilos/03-produtos/papel-de-parede.png" alt="Papel de Parede da Muttati Cortinas">
+            <img src="estilos/03-produtos/papel.png" alt="Papel de Parede da Muttati Cortinas">
             <h3>Papel de Parede</h3>
             <a href="papel-de-parede.html" class="botao__fundo-1">Veja mais</a>
         </div>
