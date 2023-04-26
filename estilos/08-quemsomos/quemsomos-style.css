@@ -16,6 +16,7 @@
 }
 
 .quem-somos__img > img{
+    max-width: 400px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
@@ -23,5 +24,10 @@
 @media (max-width: 750px){
     .quem-somos__descricao{
         padding-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .quem-somos__img > img {
+        width: 100%;
     }
 }
