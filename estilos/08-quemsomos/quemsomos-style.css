@@ -16,7 +16,7 @@
 }
 
 .quem-somos__img > img{
-    max-width: 400px;
+    width: 400px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
