@@ -266,7 +266,7 @@
             </div>
         </div>
         <div class="quem-somos__img">
-            <img src="estilos/08-quemsomos/quem-somos.jpeg" loading="lazy">
+            <img src="estilos/08-quemsomos/mutatti-quem-somos.jpeg" loading="lazy">
         </div>
     </section>
 
